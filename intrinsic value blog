@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mastering Intrinsic Value: A Deep Dive into Stocks, Bonds, and Options</title>
-    <meta name="description" content="Unlock the secrets of intrinsic value in stocks, bonds, and options. Learn expert valuation techniques and make informed investment decisions.">
+    <title>Advanced Intrinsic Value Analysis: Stocks, Bonds, and Options</title>
     <style>
         :root {
             --primary-color: #3498db;
@@ -28,7 +27,7 @@
         }
         .container {
             width: 100%;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -122,25 +121,10 @@
             background-color: #fff;
             border-radius: 0 0 5px 5px;
         }
-        #toc {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-        }
-        #toc ul {
-            list-style-type: none;
-        }
-        #toc ul li {
-            margin-bottom: 0.5rem;
-        }
-        #toc ul li a {
-            color: var(--link-color);
-            text-decoration: none;
-        }
-        #toc ul li a:hover {
-            text-decoration: underline;
+        .chart-container {
+            width: 100%;
+            height: 300px; /* Adjusted for mobile devices */
+            margin: 1rem auto; /* Added margin for spacing */
         }
         .back-to-top {
             position: fixed;
@@ -154,58 +138,47 @@
             display: none;
             z-index: 1000;
         }
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             body {
-                font-size: 18px;
+                font-size: 14px;
             }
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 2.5rem;
-            }
-            h3 {
-                font-size: 2rem;
+            .chart-container {
+                height: 250px; /* Adjusted height for smaller screens */
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>Advanced Intrinsic Value Analysis: Stocks, Bonds, and Options</h1>
         
         <nav id="toc">
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#intrinsic-value-defined">Intrinsic Value Defined</a></li>
-                <li><a href="#intrinsic-value-of-stocks">Intrinsic Value of Stocks</a></li>
-                <li><a href="#intrinsic-value-of-bonds">Intrinsic Value of Bonds</a></li>
-                <li><a href="#intrinsic-value-of-options">Intrinsic Value of Options</a></li>
+                <li><a href="#intrinsic-value-stocks">Intrinsic Value of Stocks</a></li>
+                <li><a href="#intrinsic-value-bonds">Intrinsic Value of Bonds</a></li>
+                <li><a href="#intrinsic-value-options">Intrinsic Value of Options</a></li>
                 <li><a href="#practical-applications">Practical Applications</a></li>
                 <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#references">References</a></li>
             </ul>
         </nav>
 
         <section id="introduction">
             <h2>Introduction</h2>
             <p>In the dynamic world of finance, understanding the intrinsic value of assets is crucial for making informed investment decisions. Whether you're a seasoned investor or just starting your journey, grasping the concept of intrinsic value can be your key to unlocking profitable opportunities in stocks, bonds, and options.</p>
-            
-            <div class="highlight-box">
-                <p><span class="stat">Did you know?</span> Warren Buffett, one of the most successful investors of all time, built his fortune by focusing on intrinsic value. His strategy of identifying undervalued companies has led to an average annual return of 20% over the past 65 years<sup class="reference">1</sup>.</p>
-            </div>
-
+            <p>Did you know? Warren Buffett, one of the most successful investors of all time, built his fortune by focusing on intrinsic value. His strategy of identifying undervalued companies has led to an average annual return of 20% over the past 65 years<sup>[1]</sup>.</p>
             <p>This comprehensive guide will delve into the intricacies of calculating and applying intrinsic value across different asset classes. By the end, you'll have a robust toolkit for evaluating investments and making decisions that align with your financial goals.</p>
         </section>
 
         <section id="intrinsic-value-defined">
             <h2>Intrinsic Value Defined</h2>
             <p>Intrinsic value is the perceived true worth of an asset, independent of its current market price. It's what an investor believes an asset is worth based on all aspects of the business or property, both tangible and intangible factors.</p>
-
-            <div class="tip">
-                <h4>Key Takeaway:</h4>
-                <p>Intrinsic value is not always reflected in the market price of an asset. This discrepancy creates opportunities for savvy investors to buy undervalued assets or sell overvalued ones.</p>
+            <div class="highlight-box">
+                <p><strong>Key Takeaway:</strong> Intrinsic value is not always reflected in the market price of an asset. This discrepancy creates opportunities for savvy investors to buy undervalued assets or sell overvalued ones.</p>
             </div>
-
             <p>Understanding intrinsic value is essential because:</p>
             <ul>
                 <li>It helps investors identify undervalued or overvalued assets</li>
@@ -215,26 +188,14 @@
             </ul>
         </section>
 
-        <section id="intrinsic-value-of-stocks">
+        <section id="intrinsic-value-stocks">
             <h2>Intrinsic Value of Stocks</h2>
-            <p>Calculating the intrinsic value of stocks is both an art and a science. While there are quantitative methods available, they often require qualitative judgment to interpret the results effectively.</p>
 
             <h3>Discounted Cash Flow (DCF) Analysis</h3>
-            <p>The DCF method is widely regarded as one of the most comprehensive ways to calculate a stock's intrinsic value. It estimates the present value of all future cash flows a company is expected to generate.</p>
-
-            <div class="collapse-btn">DCF Formula and Explanation</div>
-            <div class="collapse-content">
-                <p>The basic DCF formula is:</p>
-                <pre>
-Intrinsic Value = Σ (Cash Flow / (1 + Discount Rate)^t) + Terminal Value
-Where:
-t = the number of years in the forecast period
-Cash Flow = Free Cash Flow to Firm (FCFF) or Free Cash Flow to Equity (FCFE)
-Discount Rate = Weighted Average Cost of Capital (WACC) or Cost of Equity
-Terminal Value = The company's value beyond the forecast period
-                </pre>
-                <p>This method requires projecting future cash flows and determining an appropriate discount rate, which can be challenging and subjective.</p>
+            <div class="highlight-box">
+                <p>The DCF method estimates the present value of all future cash flows a company is expected to generate. It is a comprehensive way to calculate a stock's intrinsic value.</p>
             </div>
+            <div class="chart-container" id="dcfChart"></div>
 
             <h3>Metric-Based Valuations</h3>
             <p>While not as comprehensive as DCF, metric-based valuations provide quick insights into a stock's potential value. Key metrics include:</p>
@@ -244,29 +205,22 @@ Terminal Value = The company's value beyond the forecast period
                 <li>Price/Earnings-to-Growth (PEG) Ratio</li>
                 <li>Enterprise Value to EBITDA (EV/EBITDA)</li>
             </ul>
-
             <div class="case-study">
                 <h4>Case Study: Apple Inc. (AAPL)</h4>
-                <p>As of 2023, Apple's P/E ratio is around 30, which is higher than the S&P 500 average of 20. This could suggest that Apple is overvalued. However, when we consider Apple's strong brand, loyal customer base, and consistent innovation, many investors believe its intrinsic value justifies the premium<sup class="reference">2</sup>.</p>
+                <p>As of 2023, Apple's P/E ratio is around 30, which is higher than the S&P 500 average of 20. This could suggest that Apple is overvalued. However, when we consider Apple's strong brand, loyal customer base, and consistent innovation, many investors believe its intrinsic value justifies the premium<sup>[2]</sup>.</p>
             </div>
         </section>
 
-        <section id="intrinsic-value-of-bonds">
+        <section id="intrinsic-value-bonds">
             <h2>Intrinsic Value of Bonds</h2>
+
             <p>The intrinsic value of a bond is typically easier to calculate than that of stocks because bonds have fixed cash flows and a defined maturity date.</p>
 
             <h3>Bond Valuation Formula</h3>
-            <div class="collapse-btn">Bond Valuation Formula and Explanation</div>
-            <div class="collapse-content">
-                <pre>
-Bond Value = Σ (Coupon Payment / (1 + r)^t) + (Face Value / (1 + r)^n)
-Where:
-r = required yield (discount rate)
-t = number of years until each coupon payment
-n = number of years until maturity
-                </pre>
-                <p>This formula calculates the present value of all future coupon payments plus the present value of the face value at maturity.</p>
+            <div class="highlight-box">
+                <p>The yield-to-maturity (YTM) of a bond is often considered a good approximation of its expected return, assuming the bond is held to maturity and all payments are made as scheduled.</p>
             </div>
+            <div class="chart-container" id="bondValuationChart"></div>
 
             <p>Factors affecting a bond's intrinsic value include:</p>
             <ul>
@@ -275,89 +229,53 @@ n = number of years until maturity
                 <li>Time to maturity: Longer-term bonds are usually more sensitive to interest rate changes</li>
                 <li>Embedded options: Features like call or put options can affect a bond's value</li>
             </ul>
-
-            <div class="warning">
-                <h4>Important Consideration:</h4>
-                <p>The yield-to-maturity (YTM) of a bond is often considered a good approximation of its expected return, assuming the bond is held to maturity and all payments are made as scheduled.</p>
-            </div>
         </section>
 
-        <section id="intrinsic-value-of-options">
+        <section id="intrinsic-value-options">
             <h2>Intrinsic Value of Options</h2>
+
             <p>Options have two components of value: intrinsic value and time value. The intrinsic value of an option is the amount by which it is in-the-money (ITM).</p>
 
             <h3>Calculating Option Intrinsic Value</h3>
-            <ul>
-                <li>For a call option: Max(0, Underlying Price - Strike Price)</li>
-                <li>For a put option: Max(0, Strike Price - Underlying Price)</li>
-            </ul>
-
-            <div class="tip">
-                <h4>Remember:</h4>
-                <p>An option's intrinsic value can never be negative. Out-of-the-money (OTM) options have zero intrinsic value.</p>
+            <div class="highlight-box">
+                <p>For a call option: Max(0, Underlying Price - Strike Price)<br>
+                For a put option: Max(0, Strike Price - Underlying Price)</p>
             </div>
+            <div class="chart-container" id="optionIntrinsicChart"></div>
 
-            <p>The total value of an option is the sum of its intrinsic value and time value. Time value is influenced by factors such as:</p>
+            <p>An option's total value is the sum of its intrinsic value and time value, which is influenced by factors such as:</p>
             <ul>
                 <li>Time until expiration</li>
                 <li>Volatility of the underlying asset</li>
                 <li>Interest rates</li>
                 <li>Dividends (for equity options)</li>
             </ul>
-
             <div class="case-study">
                 <h4>Example: Apple Call Option</h4>
                 <p>Suppose Apple (AAPL) is trading at $150, and you hold a call option with a strike price of $140 expiring in 3 months. The intrinsic value of this option is $10 ($150 - $140). If the option is trading at $15, the remaining $5 represents its time value.</p>
             </div>
         </section>
-</section>
 
         <section id="practical-applications">
             <h2>Practical Applications of Intrinsic Value</h2>
+
             <p>Understanding intrinsic value has numerous practical applications for investors:</p>
-
-            <h3>1. Value Investing</h3>
-            <p>Value investors like Warren Buffett use intrinsic value calculations to identify stocks trading below their true worth, aiming to buy them at a discount.</p>
-
-            <h3>2. Portfolio Management</h3>
-            <p>Asset managers use intrinsic value estimates to make allocation decisions across different asset classes and to rebalance portfolios.</p>
-
-            <h3>3. Mergers and Acquisitions</h3>
-            <p>Companies and investment banks calculate intrinsic value to determine fair prices for corporate takeovers and mergers.</p>
-
-            <h3>4. Options Trading Strategies</h3>
-            <p>Options traders use intrinsic value calculations to develop strategies like covered calls, protective puts, and spreads.</p>
-
-            <div class="highlight-box">
-                <p><span class="stat">Pro Tip:</span> Regularly comparing an asset's market price to your calculated intrinsic value can help you make more informed buy, hold, or sell decisions.</p>
+            <ol>
+                <li><strong>Value Investing:</strong> Value investors like Warren Buffett use intrinsic value calculations to identify stocks trading below their true worth, aiming to buy them at a discount.</li>
+                <li><strong>Portfolio Management:</strong> Asset managers use intrinsic value estimates to make allocation decisions across different asset classes and to rebalance portfolios.</li>
+                <li><strong>Mergers and Acquisitions:</strong> Companies and investment banks calculate intrinsic value to determine fair prices for corporate takeovers and mergers.</li>
+                <li><strong>Options Trading Strategies:</strong> Options traders use intrinsic value calculations to develop strategies like covered calls, protective puts, and spreads.</li>
+                <li><strong>Risk Management:</strong> By understanding the intrinsic value of assets, investors can better assess potential downside risks and set appropriate stop-loss levels.</li>
+                <li><strong>Long-Term Investment Planning:</strong> Intrinsic value analysis helps in creating and maintaining a long-term investment strategy that's less susceptible to short-term market fluctuations.</li>
+            </ol>
+            <div class="tip">
+                <p><strong>Pro Tip:</strong> Regularly comparing an asset's market price to your calculated intrinsic value can help you make more informed buy, hold, or sell decisions.</p>
             </div>
-
-            <h3>5. Risk Management</h3>
-            <p>By understanding the intrinsic value of assets, investors can better assess potential downside risks and set appropriate stop-loss levels.</p>
-
-            <h3>6. Long-Term Investment Planning</h3>
-            <p>Intrinsic value analysis helps in creating and maintaining a long-term investment strategy that's less susceptible to short-term market fluctuations.</p>
-        </section>
-
-        <section id="challenges-and-limitations">
-            <h2>Challenges and Limitations in Calculating Intrinsic Value</h2>
-            <p>While intrinsic value is a powerful concept, it's important to recognize its limitations:</p>
-
-            <div class="warning">
-                <h4>Key Challenges:</h4>
-                <ul>
-                    <li>Subjectivity in assumptions and projections</li>
-                    <li>Difficulty in predicting future cash flows accurately</li>
-                    <li>Changing market conditions and economic factors</li>
-                    <li>Intangible assets that are hard to quantify</li>
-                </ul>
-            </div>
-
-            <p>To mitigate these challenges, investors often use multiple valuation methods and conduct sensitivity analyses to account for different scenarios.</p>
         </section>
 
         <section id="conclusion">
             <h2>Conclusion</h2>
+
             <p>Mastering the concept of intrinsic value is a crucial skill for any serious investor. By understanding how to calculate and apply intrinsic value across stocks, bonds, and options, you can:</p>
             <ul>
                 <li>Make more informed investment decisions</li>
@@ -366,22 +284,18 @@ n = number of years until maturity
                 <li>Better manage investment risks</li>
             </ul>
             <p>Remember, while intrinsic value provides a valuable framework for analysis, it should be used in conjunction with other financial metrics and qualitative factors. The market is complex and dynamic, and no single measure can capture all relevant information.</p>
-            <div class="tip">
-                <h4>Final Thought:</h4>
-                <p>Continuous learning and adaptation are key in the world of investing. Stay informed about new valuation techniques, industry trends, and economic factors to refine your intrinsic value calculations over time.</p>
+            <div class="highlight-box">
+                <p><strong>Final Thought:</strong> Continuous learning and adaptation are key in the world of investing. Stay informed about new valuation techniques, industry trends, and economic factors to refine your intrinsic value calculations over time.</p>
             </div>
-        </section>
-
-        <section id="call-to-action">
-            <h2>Take Your Investing to the Next Level</h2>
-            <p>Ready to apply these intrinsic value concepts to your investment strategy? Here are some next steps:</p>
+            <p><strong>Take Your Investing to the Next Level</strong><br>
+            Ready to apply these intrinsic value concepts to your investment strategy? Here are some next steps:</p>
             <ol>
                 <li>Practice calculating intrinsic value for different assets in your portfolio</li>
                 <li>Explore our advanced courses on financial analysis and valuation techniques</li>
                 <li>Join our community forum to discuss valuation strategies with fellow investors</li>
                 <li>Sign up for our newsletter to receive regular updates on market trends and valuation insights</li>
             </ol>
-            <a href="#" class="cta-button">Start Your Intrinsic Value Journey Today</a>
+            <p><strong>Start Your Intrinsic Value Journey Today</strong></p>
         </section>
 
         <section id="references">
@@ -398,38 +312,100 @@ n = number of years until maturity
         <a href="#" class="back-to-top">Back to Top</a>
     </div>
 
-    <script>
-        // JavaScript for collapsible sections
-        var coll = document.getElementsByClassName("collapse-btn");
-        var i;
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    // Example data for DCF chart
+    var dcfData = [{
+        x: ['2023-01-01', '2024-01-01', '2025-01-01'],
+        y: [100, 150, 200],
+        type: 'scatter',
+        mode: 'lines+markers',
+        marker: {color: 'blue'},
+        name: 'DCF Analysis'
+    }];
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                } 
-            });
+    var dcfLayout = {
+        title: 'Discounted Cash Flow Analysis',
+        xaxis: {
+            title: 'Year',
+            tickmode: 'linear'
+        },
+        yaxis: {
+            title: 'Intrinsic Value ($)',
+            tickprefix: '$'
+        },
+        margin: {
+            l: 50,
+            r: 20,
+            b: 70,
+            t: 50,
+            pad: 4
         }
+    };
 
-        // JavaScript for "Back to Top" button
-        var backToTopButton = document.querySelector(".back-to-top");
+    // Example data for Bond Valuation chart
+    var bondValuationData = [{
+        x: ['2023-01-01', '2024-01-01', '2025-01-01'],
+        y: [95, 100, 105],
+        type: 'scatter',
+        mode: 'lines+markers',
+        marker: {color: 'green'},
+        name: 'Bond Valuation'
+    }];
 
-        window.addEventListener("scroll", function() {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
+    var bondValuationLayout = {
+        title: 'Bond Valuation',
+        xaxis: {
+            title: 'Year',
+            tickmode: 'linear'
+        },
+        yaxis: {
+            title: 'Bond Value ($)',
+            tickprefix: '$'
+        },
+        margin: {
+            l: 50,
+            r: 20,
+            b: 70,
+            t: 50,
+            pad: 4
+        }
+    };
 
-        backToTopButton.addEventListener("click", function(e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+    // Example data for Option Intrinsic Value chart
+    var optionIntrinsicData = [{
+        x: ['2023-01-01', '2024-01-01', '2025-01-01'],
+        y: [10, 8, 12],
+        type: 'scatter',
+        mode: 'lines+markers',
+        marker: {color: 'purple'},
+        name: 'Option Intrinsic Value'
+    }];
+
+    var optionIntrinsicLayout = {
+        title: 'Option Intrinsic Value',
+        xaxis: {
+            title: 'Year',
+            tickmode: 'linear'
+        },
+        yaxis: {
+            title: 'Intrinsic Value ($)',
+            tickprefix: '$'
+        },
+        margin: {
+            l: 50,
+            r: 20,
+            b: 70,
+            t: 50,
+            pad: 4
+        }
+    };
+
+    // Initialize charts using Plotly
+    Plotly.newPlot('dcfChart', dcfData, dcfLayout);
+    Plotly.newPlot('bondValuationChart', bondValuationData, bondValuationLayout);
+    Plotly.newPlot('optionIntrinsicChart', optionIntrinsicData, optionIntrinsicLayout);
+</script>
+
 </body>
 </html>
